@@ -1,0 +1,6 @@
+# Отдельная настройка уже скачанной модели; исходная модель не изменяется.
+FROM qwen2.5:14b-instruct-q3_K_M
+PARAMETER num_ctx 4096
+# В /v1/chat/completions требуется также явно передать temperature=0 (см. docs/mlchat.md).
+PARAMETER temperature 0
+PARAMETER num_predict 512

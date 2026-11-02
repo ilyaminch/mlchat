@@ -1,0 +1,61 @@
+# Локальные инструкции и исходная база знаний
+/AGENTS.md
+/docs_c/
+
+# Окружение, сборки и результаты запусков
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+/.artifacts/
+/.ruff_cache/
+/.pytest_cache/
+/.mypy_cache/
+/.coverage
+/.coverage.*
+/htmlcov/
+/coverage.xml
+*.log
+*.whl
+*.gguf
+*.safetensors
+
+# Секреты и настройки рабочего места
+.env
+.env.*
+!.env.example
+!.env.template
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Локальные тесты, эталоны и инструменты экспериментов.
+# Не требуются для подключения MLChat; остаются на диске.
+/tests/
+/fixtures/
+/requirements-mlchat-test.lock
+/scripts/evaluate_mlchat.py
+/scripts/try_mlchat.py
+/docs/mlchat-model-comparison.md
+/docs/mlchat-qwen35.md
+/docs/mlchat-verification.md
+/config/ollama/Modelfile.qwen7b
+
+# Прежний расширенный AST и подготовка проверочных геоданных.
+# Рабочий MLChat использует FilterV1 и capabilities установленного backend.
+/filter_validation/
+/schemas/
+/config/search-catalog.json
+/data/
+/docs
+!/docs/mlchat.md
+/requirements-validation.txt
+/requirements-geodata.txt
+/scripts/verification_geodata.py
+/docs/filter-schema.md
+/docs/filter-validation.md
+/docs/verification-geodata.md

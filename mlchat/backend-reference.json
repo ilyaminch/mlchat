@@ -1,0 +1,15 @@
+{
+  "package": "gis-assistant-backend",
+  "version": "0.1.0",
+  "archive_sha256": "b6860f90057a450665039feb8fd1043106f91952884b20a973e985c5a67f0aa7",
+  "wheel": "gis_assistant_backend-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "83672bbb603be2816715e2299d54a955b7a8c66811bcb708ceac112db4b13060",
+  "contract_sha256": {
+    "app/catalog/capabilities.py": "e95adc5ff8c8bd57b62f5b2e39ab6974c9c5a41d8289cc4750e46cfe5db588a8",
+    "app/contracts/chat.py": "8efda48172a7a9fa2bcd463d3f951ee9d03e9552d8adb3ef28bf971c6753571e",
+    "app/contracts/filter.py": "ad0412d1fadfe00d22f9154a6c5e2b632bf7d984aa4d23e960442fc1ad32e883",
+    "app/contracts/read_api.py": "47491d5bef07c9c349a517d782a7c0182f487e16eee9ab28d9f08c286bc1afe9",
+    "app/dialogue/protocol.py": "7e97be865fe108ab7ce286dc1cc6d7eb116a82f75e2d309ab96aca7d7c90daf5",
+    "app/llm/client.py": "02801aecf96b4e6fdbe222275a7d6fa90c804d5feb4c137efb5dd7717dd6e050"
+  }
+}

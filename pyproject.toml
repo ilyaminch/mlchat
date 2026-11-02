@@ -1,0 +1,37 @@
+[project]
+name = "gis-assistant-mlchat"
+version = "0.1.3"
+description = "Интерпретация русских запросов и уточнения для ГИС-помощника"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["gis-assistant-backend==0.1.0"]
+
+[project.optional-dependencies]
+dev = ["build>=1.2,<2", "ruff>=0.9,<1"]
+
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mlchat"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "mlchat",
+    "config/ollama/Modelfile.qwen14b",
+    "config/ollama/Modelfile.qwen35-9b",
+    "scripts/build_mlchat_backend_reference.py",
+    "docs/mlchat.md",
+    "docs/mlchat-quality.md",
+    "README.md",
+    "pyproject.toml",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+include = ["mlchat/**/*.py", "tests/test_mlchat*.py", "scripts/*mlchat*.py", "pyproject.toml"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
